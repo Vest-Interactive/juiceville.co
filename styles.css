@@ -1,0 +1,417 @@
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounce {
+    from, 20%, 53%, 80%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    40%, 43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+@keyframes bounce {
+    from, 20%, 53%, 80%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    40%, 43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+
+/* ********************************************************************************************************************* */
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f3f2f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    border-top: 2% solid #478d5b;
+}
+
+.bgcolor {
+    background: #fff;
+}
+
+#lsicons {
+    background: url('images/bg_ls.png') no-repeat top left;
+}
+
+#rsicons {
+    background: url('images/bg_rs.png') no-repeat top right;
+}
+
+header {
+    background: url('images/juiceville_logo.svg') no-repeat center 10%;
+    background-size: 30%;
+    padding: 18% 0 5% 0;
+}
+
+#iconbar {
+    background: #fff url('images/bg_btm.png') repeat-x bottom center;
+    height: 86px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+}
+
+span.bigger {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Arvo', serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+#mce-EMAIL {
+    width: 25%;
+    margin: 1em auto;
+    padding: 8px;
+    border: none;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 2px solid #1a1a10;
+}
+
+button.button {
+    width: 25%;
+    margin: 0.5em auto;
+    padding: 8px;
+    border: none !important;
+    background-color: #be2168;
+    color: #fff;
+    font-family: 'Arvo', serif;
+    font-size: 1.2em;
+}
+
+button.button:hover {
+    background-color: #478d5b;
+}
+
+.magenta {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #be2168;
+}
+
+.description {
+    display: block;
+    width: 40%;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 1.1em;
+    padding: 3em 0;
+}
+
+.yellowbar {
+    display: block;
+    height: 1px;
+    width: 20%;
+    margin: 1em auto;
+    background-color: #e5bc86;
+}
+
+.yellowbarmenu {
+    display: block;
+    height: 1px;
+    width: 35%;
+    margin: 1em 0;
+    background-color: #e5bc86;
+}
+
+.white {
+    text-align: left;
+    width: 49.5%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    background-color: #f3f2f0;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+h2.mag {
+    color: #be2168;
+}
+
+.green {
+    background-color: #478d5b;
+    text-align: left;
+    padding: 0;
+    width: 50.5%;
+    margin: 0;
+    color: #fff;
+    display: inline-block;
+    float: right;
+}
+
+address {
+    font: normal normal 1em/1.5em 'Arvo', serif;
+    margin: 1em 0;
+}
+
+ul.listview {
+    padding-left: 0px;
+}
+
+ul.listview li {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+li span.left {
+    display: inline-block;
+    width: 49%;
+    padding-left: 0px;
+}
+
+li span.right {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+
+#map {
+    margin-bottom: 2em;
+}
+
+.buffer {
+    margin: 10% 18%;
+}
+
+.padding {
+    margin: 10%;
+}
+
+a.button {
+    display: block;
+    text-decoration: none;
+    width: 35%;
+    text-align: center;
+    margin: 0.5em auto;
+    padding: 8px;
+    border: none;
+    background-color: #be2168;
+    color: #fff;
+    font-family: 'Arvo', serif;
+    font-size: 1.2em;
+}
+
+ol {
+    padding-left: 0px;
+}
+
+ol li {
+    font-family: 'Arvo', serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    list-style-position: inside;
+    list-style-type: none;
+    padding-left: 60px;
+    min-height: 3.5em;
+}
+
+#\31 {
+    background: url('images/numberSprite.png') no-repeat 0 4px;
+}
+
+#\32 {
+    background: url('images/numberSprite.png') no-repeat 0 -63px;
+}
+
+#\33 {
+    background: url('images/numberSprite.png') no-repeat 0 -131px;
+}
+
+#\34 {
+    background: url('images/numberSprite.png') no-repeat 0 -197px;
+}
+
+#\35 {
+    background: url('images/numberSprite.png') no-repeat 0 -264px;
+}
+
+#\36 {
+    background: url('images/numberSprite.png') no-repeat 0 -331px;
+}
+
+#\37 {
+    background: url('images/numberSprite.png') no-repeat 0 -398px;
+}
+
+#\38 {
+    background: url('images/numberSprite.png') no-repeat 0 -467px;
+}
+
+ul.listview li {
+    margin-bottom: 0.5em;
+}
+
+.socialicons {
+    display: block;
+    margin-top: 2em;
+}
+
+
+/* ********************************************************************************************************************* */
+
+@media all and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    header {
+        background: url('images/juiceville_logostack.svg') no-repeat center 20px;
+        background-size: 35%;
+        padding: 50% 0 10% 0;
+        background-color: none;
+    }
+    #lsicons {
+        background: #fff url('images/bg_mobile.png') no-repeat center top;
+        background-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #rsicons {
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    #mce-EMAIL {
+        width: 80%;
+        margin: 1em auto;
+        padding: 8px;
+        border: none;
+        font-size: 1.2em;
+        text-align: center;
+        border-bottom: 2px solid #1a1a10;
+    }
+    button.button {
+        width: 80%;
+        margin: 0.5em auto;
+        padding: 8px;
+        border: none !important;
+        background-color: #be2168;
+        color: #fff;
+        font-family: 'Arvo', serif;
+        font-size: 1.2em;
+    }
+    button.button:hover {
+        background-color: #478d5b;
+    }
+    .description {
+        width: 80%;
+        text-align: left;
+        font-size: 1em;
+    }
+    .white {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .green {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    a.button {
+        width: 80%;
+        margin: 18% auto;
+        border: none !important;
+        background-color: #be2168 !important;
+    }
+    .buffer {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .padding {
+        width: 80%;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    ol li {
+        font-size: 0.8em;
+        min-height: 4.5em;
+    }
+}

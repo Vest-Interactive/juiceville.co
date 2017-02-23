@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+<input id='pickupName' value='test'></input>
+<input id='emailAddress' value='test@example.com'></input>
+	<script>
+var cleanedOrder = {
+  "quest": {
+    "totalItems": 3,
+    "blueberry": 1,
+    "cookies-and-cream": 1,
+    "chocolate-peanut-butter": 1
+  },
+  "subtotal": "7.50",
+  "discounts": {},
+  "totalDiscounts": "0.00",
+  "taxes": "0.45",
+  "total": "7.95"
+};
+
+var request = new XMLHttpRequest();
+request.open('POST', '/ajaxtest.php', true);
+request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+request.onload = function() {
+  if (request.status >= 200 && request.status < 400) {
+    // Success!
+    var resp = request.responseText;
+console.log('Success');
+  } else {
+    // We reached our target server, but it returned an error
+    console.log('success2');
+  }
+};
+
+request.onerror = function() {	
+	console.log('err');
+  // There was a connection error of some sort
+};
+
+request.send(JSON.stringify({'order': cleanedOrder, 'name': document.getElementById('pickupName').value, 'email':document.getElementById('emailAddress').value}, null, 4));
+
+	</script>
